@@ -1,0 +1,7 @@
+<h1>Lista de empleados</h1>
+<ul>
+  <li *ngFor="let employee of employeeList, let i = index">
+    <a routerLink="employee/{{employee.id}}">{{employee.name}}</a>
+  </li>
+
+</ul>
